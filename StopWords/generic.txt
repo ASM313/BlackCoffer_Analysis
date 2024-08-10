@@ -82,6 +82,7 @@ SHOULD
 SO
 SOME
 SUCH
+Summarized
 THAN
 THAT
 THE

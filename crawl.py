@@ -34,6 +34,14 @@ soup = BeautifulSoup(response.content, 'html.parser')
 title = soup.find('h1').get_text()
 paragraphs = soup.find_all('p')
 article_text = " ".join([p.get_text() for p in paragraphs])
+
+## All the articles have same content after wors "Summarized"
+
+position = article_text.find("Summarized")
+
+if position != -1:
+    article_text=article_text[:position + len("Summarized")]
+
 # Save to a text file
 with open(f'{url_id}.txt', 'w', encoding='utf-8') as file:
     file.write(title + "\n" + article_text)
