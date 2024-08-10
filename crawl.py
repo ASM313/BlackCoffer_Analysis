@@ -25,9 +25,8 @@ import os
 
 # Request the page
 
-url_id='first'
-url='https://insights.blackcoffer.com/ml-and-ai-based-insurance-premium-model-to-predict-premium-to-be-charged-by-the-insurance-company/'
-
+url_id='second'
+url='https://insights.blackcoffer.com/streamlined-integration-interactive-brokers-api-with-python-for-desktop-trading-application/'
 response = requests.get(url)
 soup = BeautifulSoup(response.content, 'html.parser')
 
