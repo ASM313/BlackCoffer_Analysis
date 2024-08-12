@@ -1,7 +1,7 @@
 # Import neccessary stuff
 import os
 import nltk
-nltk.download('punkt_tab')
+nltk.download('punkt')
 from nltk import word_tokenize, sent_tokenize
 import string
 import re
